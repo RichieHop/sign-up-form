@@ -5,7 +5,7 @@
     --primary-light: rgb(237, 237, 237);
     --light-grey: rgb(174, 175, 177);
     --overlay-link-colour: rgb(84, 108, 155);
-    --overlay-background: rgba(91, 73, 180, 0.2);
+    --overlay-background: rgba(91, 73, 180, 0.3);
 }
 * {
     margin: 0;
