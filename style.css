@@ -43,7 +43,7 @@ body{
 img{
     max-width: 75%;
     max-height: 75%;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1); /* Change the colour of the icon to white */
 }
 .overlay{
     display: flex;
@@ -101,7 +101,7 @@ img{
 }
 .form{
     background-color: var(--form-background-color);
-    padding: 3% 7% 3%;
+    padding: 2% 7% 4%;
 }
 form{
     display: flex;
@@ -126,20 +126,32 @@ form{
 .formRows label{
     font-size: 0.8vw;
     font-weight: 600;
+    padding-bottom: 2px;
+    opacity: 60%;
 }
 .formRows input{
     height: 1.5vw;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.8vw;
     border: 1px solid #d6d8da;
+    padding-left: 0.25vw;
 }
 .formRows input:focus{
     border-color: var(--input-focus-border-color);
     box-shadow:  0px 4px 11px -4px rgba(44, 43, 43, 0.82);
     outline: none;
 }
+/* Set border colour to red for input fields if they're invalid and have focus */
+.formRows input:invalid:focus{
+    border-color: var(--input-invalid-border-color)
+}
+/* Set border colour to red for password input fields if they're invalid, regardless of whether they have focus */
 .formRows input[type="password"]:invalid{
     border-color: var(--input-invalid-border-color)
+}
+/* Reduce placeholder opacity */
+input::placeholder {
+  opacity: 0.5;
 }
 hr{
     border: none;

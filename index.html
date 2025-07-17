@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign-Up</title>
+    <title>Supernova Sign-Up</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Embed for Roboto font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,34 +47,34 @@
                     <div class="formRows">
                         <div class="rowGroup">
                             <label for="firstname">First Name</label>
-                            <input type="text" id="firstname" name="firstname">
+                            <input type="text" minlength="2" title="Minimum 2 characters" placeholder="John" id="firstname" name="firstname" required>
                         </div>
                         <div class="rowGroup">
                             <label for="lastname">Last Name</label>
-                            <input type="text" id="lastname" name="lastname">
+                            <input type="text" minlength="2" title="Minimum 2 characters" placeholder="Smith" id="lastname" name="lastname" required>
                         </div>
                         <div class="rowGroup">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" placeholder="myemail@provider.com" id="email" name="email" required>
                         </div>
                         <div class="rowGroup">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" placeholder="123-456-7890" id="phone" name="phone" required>
                         </div>
                         <div class="rowGroup">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" minlength="8" title="Minimum 8 characters" id="password" name="password" required>
                         </div>
                         <div class="rowGroup">
                             <label for="confirmPassword">Confirm Password</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword">
+                            <input type="password" minlength="8" title="Minimum 8 characters" id="confirmPassword" name="confirmPassword" required>
                         </div>
                     </div>
                 </form>    
             </div>
             <hr>
             <div class="create-account">
-                <button type="submit" title="If this was a working site this button would create an account. But it's not, so it won't. It will validate your data though.">Create Account</button>
+                <button type="submit" title="If this was a working site this button would create an account. But it's not, so it won't.">Create Account</button>
                 <p><br>Already have an account? <a href="" title="If this was a working site this button would take you to the login page. But it's not, so it won't.">Log in</a></p>
             </div>
         </div>
